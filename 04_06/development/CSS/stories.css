@@ -1,0 +1,78 @@
+@import 'variables';
+/*--------------------------------------------------------------
+Stories styles
+--------------------------------------------------------------*/
+.stories {
+    margin-bottom: 6em;
+}
+
+.story {
+    padding: 1em 2em 2em;
+}
+
+@media screen and (min-width: 50em) {
+    .story-wrapper img {
+        width: 60%!important;
+        float: left;
+    }
+
+    .story {
+        box-sizing: border-box;
+        width: 40%;
+        float: right;
+    }
+}
+
+.flex-viewport {
+    background: white;
+}
+
+.flex-control-nav {
+    -js-display: flex;
+    display: flex;
+}
+
+.flex-direction-nav {
+    position: relative;
+    -js-display: flex;
+    display: flex;
+    float: right;
+    margin: 0;
+}
+
+.flex-direction-nav a {
+    position: relative;
+    opacity: 100;
+    margin: 0;
+    width: 30px;
+}
+
+.flex-direction-nav a::before {
+    font-family: inherit;
+    content: "‹";
+}
+
+.flex-direction-nav a.flex-next::before {
+    content: "›";
+}
+
+.flex-direction-nav .flex-prev {
+    left: 0;
+}
+
+.flex-direction-nav .flex-next {
+    right: 0;
+}
+
+.story-header {
+    margin-bottom: 0em;
+    font-size: 180%;
+}
+.author {
+    color: hsl(0, 0%, 45%);
+}
+
+.story p {
+    font-size: 120%;
+    font-style: italic;
+}

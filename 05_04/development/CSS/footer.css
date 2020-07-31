@@ -1,0 +1,94 @@
+@import 'variables';
+/*--------------------------------------------------------------
+Footer styles
+--------------------------------------------------------------*/
+
+.footer {
+    padding: 3em 3em 0;
+    background: hsl(0, 0%, 10%);
+    color: $beige;
+}
+
+@media screen and (min-width: 50em) {
+    .footer-widgets {
+        -js-display: flex;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .widget {
+        width: 30%;
+    }
+
+}
+
+.widget-title {
+    font-size: 1.3em;
+}
+
+
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-menu a {
+    display: block;
+    padding-bottom: .5em;
+    color: $beige;
+    text-decoration: none;
+}
+
+.footer-menu a:focus::before,
+.footer-menu a:hover::before {
+    margin-right: .5em;
+    content: "›";
+}
+
+.footer-cta a {
+    display: block;
+    margin-top: 1em;
+    padding: 0 .5em;
+    font-size: 2em;
+    font-weight: 900;
+    color: #fffced;
+    text-align: center;
+    text-decoration: none;
+    border: 5px solid #fffced;
+}
+
+.footer-cta a:focus,
+.footer-cta a:hover {
+    background: $red;
+}
+
+.social-nav {
+    margin: 4em -3em 0;
+    padding: 1em 0;
+    background: $red;
+}
+
+.social-nav ul {
+    -js-display: flex;
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-nav a {
+    padding: 1em;
+}
+
+.social-nav svg {
+    width: 1.4em;
+    height: auto;
+
+}
+
+.social-nav path {
+    fill: $beige;
+}
